@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eatmediatv.com/sitemap.xml
