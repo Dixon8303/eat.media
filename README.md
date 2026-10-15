@@ -31,9 +31,37 @@ the registrar — GoDaddy) needs:
 Then, once DNS propagates, enable **Settings → Pages → Enforce HTTPS** in
 this repo (the certificate can take up to 24h to issue the first time).
 
-Until that DNS change happens, `eatmediatv.com` keeps serving whatever it
-currently points at — pushing here is safe and has zero effect on the live
-domain by itself.
+**That DNS change is done** (verified Oct 13, 2026: the four A records and
+the `www` CNAME above resolve). Every push to `main` now goes live on
+`eatmediatv.com` within a minute or two, so changes come in as pull
+requests.
+
+## Short links for What History Buried (Addendum A02, Oct 13, 2026)
+
+Say-able URLs on the domain D already owns, so Shorts end cards and the ABE
+podcast can name a link without buying a new domain. Each is a folder with
+one `index.html` that forwards to the book site with tracking tags. Nothing
+on the site links to them, and they carry `noindex`.
+
+| Short link | Forwards to | Tags (all add `utm_campaign=whb_campaign`) |
+|---|---|---|
+| eatmediatv.com/book | the book site's home | `utm_source=eatmediatv`, `utm_medium=short_link`, `utm_content=book` |
+| eatmediatv.com/abe | the book site's home | `utm_source=abe_podcast`, `utm_medium=audio`, `utm_content=abe` |
+| eatmediatv.com/quiz | `erasure.html`, the 3-question test | `utm_source=eatmediatv`, `utm_medium=short_link`, `utm_content=quiz` |
+| eatmediatv.com/challenge | `unlearn.html`, the 5-Day Unlearning Challenge | `utm_source=eatmediatv`, `utm_medium=short_link`, `utm_content=challenge` |
+
+The book site lives at https://dixon8303.github.io/ImaginariumOzone/book/. A
+visitor who arrives with their own `utm_` tags keeps them; any other query
+string and the `#anchor` pass through; without JavaScript, a meta refresh
+forwards with the default tags.
+
+To add a slug (`/gift`, `/class`, `/talk` and `/founding` arrive with their
+pages), copy `book/index.html` to `<slug>/index.html` and change the target URL
+and the tag string everywhere they appear: the canonical link, the two script
+variables, the meta refresh and the visible link. Keep the staging copy in
+ImaginariumOzone's `eatmedia/` in step. If the book site moves, or
+`erasure.html` or `unlearn.html` is renamed, update these targets the same day:
+the URLs are already spoken in Shorts and on the podcast.
 
 ## Origin
 
