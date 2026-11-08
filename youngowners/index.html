@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Young Owners</title>
+<meta name="description" content="Young Owners is a seven-volume entrepreneurship, technology, creativity and ownership curriculum for 7th and 8th grade. See the problem. Build the solution. Understand the money. Own the value.">
+<meta property="og:title" content="Young Owners"><meta property="og:description" content="A seven-volume curriculum that teaches 7th and 8th graders to own the value they create."><meta property="og:image" content="https://eatmediatv.com/youngowners/img/yo_vol_i_se.webp"><meta property="og:url" content="https://eatmediatv.com/youngowners/"><link rel="canonical" href="https://eatmediatv.com/youngowners/">
+<style>
+@font-face{font-family:"Literata 12pt";src:url(fonts/Literata12pt-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Literata 12pt";src:url(fonts/Literata12pt-Italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Literata 12pt";src:url(fonts/Literata12pt-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Literata 36pt";src:url(fonts/Literata36pt-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Literata 72pt";src:url(fonts/Literata72pt-Black.woff2) format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url(fonts/AtkinsonHyperlegibleNext-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url(fonts/AtkinsonHyperlegibleNext-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url(fonts/AtkinsonHyperlegibleNext-ExtraBold.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Bangers";src:url(fonts/Bangers-Regular.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Sedgwick Ave Display";src:url(fonts/SedgwickAveDisplay-Regular.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Shantell Sans";src:url(fonts/ShantellSans-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Permanent Marker";src:url(fonts/PermanentMarker-Regular.woff2) format("woff2");font-display:swap}
+
+/* ---- tokens: the book's palette (tokens.css v3.2) ---- */
+:root{
+  --paper:#FFFAF0; --card:#FFFFFF; --cream:#F5F0E8; --ink:#1A1A1A; --ink-2:#4A4744; --ink-3:#5E5A55; --rule:#8C8579; --rule-2:#D9D2C3;
+  --indigo:#2D2B55; --indigo-12:#E6E5EE; --gold:#C8A961; --gold-ink:#7A5F1E; --yellow:#FFE36B; --safety:#FFF4D6; --comic-bg:#FFF6E2;
+  --v1:#A3412A; --v2:#8F5A0C; --v3:#2F6B45; --v4:#0F6672; --v5:#2B5C9E; --v6:#6E4596; --v7:#8A2C52;
+  --accent:var(--v1); --on-dark:#F5F0E8;
+  --ff-text:"Literata 12pt",Georgia,serif; --ff-display:"Literata 36pt","Literata 12pt",Georgia,serif; --ff-numeral:"Literata 72pt","Literata 36pt",Georgia,serif;
+  --ff-sans:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",Arial,sans-serif; --ff-comic:"Bangers",var(--ff-sans); --ff-tag:"Sedgwick Ave Display","Permanent Marker",cursive;
+  --ff-bub:"Shantell Sans",sans-serif; --ff-mk:"Permanent Marker",cursive;
+  --max:1160px; --gutter:clamp(16px,4vw,40px); --grain:url(img/paper.png);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#15142A; --cream:#201F3A; --ink:#F2EDE3; --ink-2:#CBC5B8; --ink-3:#B4AEA2; --rule:#6A6788; --rule-2:#3E3C5E; --indigo-12:#2A2948; --safety:#3A3420; --grain:none; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#15142A; --cream:#201F3A; --ink:#F2EDE3; --ink-2:#CBC5B8; --ink-3:#B4AEA2; --rule:#6A6788; --rule-2:#3E3C5E; --indigo-12:#2A2948; --safety:#3A3420; --grain:none; color-scheme:dark}
+
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper) var(--grain);color:var(--ink);font-family:var(--ff-text);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;line-height:1.1;text-wrap:balance}
+h2{font-family:var(--ff-display);font-weight:700;font-size:clamp(26px,3.4vw,40px);letter-spacing:-0.01em}
+h3{font-family:var(--ff-sans);font-weight:800;font-size:19px}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;height:auto}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.measure{max-width:64ch}
+.muted{color:var(--ink-2)}
+.fine{font-family:var(--ff-sans);font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.sans{font-family:var(--ff-sans)}
+.caps{font-family:var(--ff-sans);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:12px;background:var(--yellow);color:#1A1A1A;padding:8px 12px;z-index:99;border:2px solid #1A1A1A}
+
+/* ---- comic lettering on a painted tape (comic.css .sec-head-read) ---- */
+.tape{display:inline-block;font-family:var(--ff-comic);font-size:22px;line-height:1;letter-spacing:.06em;color:#fff;background:var(--accent);padding:5px 16px 5px 13px;border-radius:4px 18px 5px 16px;transform:rotate(-1.2deg);box-shadow:4px 4px 0 #161412;white-space:nowrap}
+.tape.sm{font-size:16px;padding:4px 11px 4px 9px;box-shadow:3px 3px 0 #161412}
+.tape.ink{background:#161412;box-shadow:4px 4px 0 var(--accent)}
+.sec-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.chip{display:inline-block;font-family:var(--ff-sans);font-weight:700;font-size:11px;line-height:1;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:3px;padding:4px 7px;color:var(--ink)}
+.chip.acc{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ---- graffiti tags (comic.css) ---- */
+.tag{display:inline-flex;align-items:center;font-family:var(--ff-tag);font-size:26px;line-height:1;transform:rotate(var(--tilt));white-space:nowrap}
+.tag-txt{color:var(--tf);-webkit-text-stroke:.06em var(--td);paint-order:stroke fill;text-shadow:.07em .07em 0 var(--td),.12em .12em 0 rgba(0,0,0,.18);letter-spacing:.01em}
+.tag.xs{font-size:17px}.tag.sm{font-size:20px}.tag.lg{font-size:36px}
+.t-dixon{--tf:#3D86FF;--td:#0B1F4D;--tilt:-5deg}.t-donavonne{--tf:#FF8A1F;--td:#3E1C00;--tilt:3deg}.t-zaire{--tf:#FFC41F;--td:#141414;--tilt:-3deg}
+.t-serenity{--tf:#FF5AA8;--td:#1E3A6E;--tilt:4deg}.t-jayceon{--tf:#33C065;--td:#5C1A0B;--tilt:-2deg}.t-deborah{--tf:#A35BD6;--td:#1F0E33;--tilt:2deg}
+.c-dixon{--c:#3D86FF}.c-donavonne{--c:#FF8A1F}.c-zaire{--c:#E0A800}.c-serenity{--c:#FF5AA8}.c-jayceon{--c:#2FB35A}.c-deborah{--c:#A35BD6}
+
+/* ---- buttons: comic register ---- */
+.btn{display:inline-block;font-family:var(--ff-sans);font-weight:800;font-size:15px;letter-spacing:.02em;text-decoration:none;padding:13px 20px;border:2px solid #161412;border-radius:4px;background:var(--yellow);color:#1A1A1A;box-shadow:4px 4px 0 #161412;transition:transform .08s,box-shadow .08s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 #161412}.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 #161412}
+.btn.ink{background:#161412;color:#fff;box-shadow:4px 4px 0 var(--accent)}
+.btn.paper{background:var(--card);color:#1A1A1A}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+
+/* ---- masthead ---- */
+.mast{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.brand{font-family:var(--ff-sans);font-weight:800;font-size:22px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .mark{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--indigo);color:#F5F0E8;font-family:var(--ff-comic);font-size:18px;letter-spacing:.04em;border:2px solid #161412;box-shadow:2px 2px 0 #161412;transform:rotate(-4deg)}
+nav.primary{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+nav.primary a{font-family:var(--ff-sans);font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:8px 10px;border-radius:3px}
+nav.primary a:hover{background:var(--yellow);color:#1A1A1A}
+.theme{font-family:var(--ff-sans);font-size:12px;font-weight:700;border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:3px;padding:6px 9px;cursor:pointer}
+@media (max-width:860px){.mast .wrap{flex-wrap:wrap;padding-bottom:6px}nav.primary{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav.primary::-webkit-scrollbar{display:none}nav.primary a{padding:7px 8px;font-size:12px;white-space:nowrap}.theme{flex:none}}
+
+/* ---- hero: album cover (build_cover.py) ---- */
+.hero{position:relative;overflow:hidden;color:var(--on-dark);background:url(img/brick.svg) 0 0/400px 200px,var(--v1);background-blend-mode:multiply,normal;border-bottom:3px solid #161412}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 62% 46% at 50% 44%,rgba(255,236,190,.55),rgba(255,236,190,0) 70%),radial-gradient(ellipse 120% 90% at 50% 40%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:end;min-height:min(86vh,760px)}
+.hero-copy{padding:56px 0 48px;position:relative;z-index:3}
+.hero .logo{font-family:var(--ff-sans);font-weight:800;font-size:clamp(54px,8.5vw,120px);line-height:.86;letter-spacing:-.015em;color:#F5F0E8;text-shadow:0 6px 0 rgba(0,0,0,.35),0 0 40px rgba(0,0,0,.25);margin:0 0 10px -3px}
+.hero .logo small{display:block;text-wrap:balance;max-width:34em;font-size:clamp(9px,1.05vw,12px);line-height:1.4;letter-spacing:.2em;font-weight:700;margin-top:12px;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.hero h1{font-family:var(--ff-display);font-weight:700;font-size:clamp(24px,3.2vw,40px);line-height:1.12;color:#fff;text-shadow:3px 3px 0 #161412;max-width:22ch;margin-top:26px}
+.hero .cap{display:inline-block;max-width:52ch;background:var(--yellow);border:2px solid #161412;color:#1A1A1A;font-family:var(--ff-text);font-size:clamp(15px,1.3vw,18px);line-height:1.45;padding:12px 16px;transform:rotate(-1deg);box-shadow:5px 5px 0 #161412;margin-top:22px}
+.hero .ctas{margin-top:26px}
+.crew{position:relative;height:min(560px,70vw);align-self:end;overflow:hidden;margin-right:calc(-1 * var(--gutter))}
+/* D-037: one image, the v3.3 Volume IV cover crew (figures placed by the face, shadows baked in) */
+.crew .crew-art{position:absolute;left:0;bottom:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:50% 100%}
+.sticker{position:absolute;z-index:8;background:var(--cream);color:#2D2B55;border:2px solid #161412;font-family:var(--ff-sans);font-weight:800;font-size:12px;letter-spacing:.14em;padding:7px 11px;transform:rotate(-3deg);box-shadow:3px 3px 0 #161412}
+.badge{position:absolute;right:var(--gutter);top:22px;z-index:9;width:92px;height:92px;border-radius:50%;background:var(--gold);border:3px solid #F5F0E8;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(10deg);box-shadow:0 4px 10px rgba(0,0,0,.4);color:#2D2B55}
+.badge span{font-family:var(--ff-sans);font-weight:800;font-size:9px;letter-spacing:.18em}.badge b{font-family:var(--ff-numeral);font-weight:900;font-size:30px;line-height:1}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;min-height:0}.hero-copy{padding:40px 0 8px}.crew{height:300px;margin-top:10px}.badge{display:none}}
+
+/* ---- stats chips (kit) ---- */
+.stats{background:var(--cream);border-bottom:2px solid #161412}
+.stats .wrap{display:flex;gap:14px;flex-wrap:wrap;padding:22px var(--gutter)}
+.stat{flex:1 1 150px;border:2px solid #161412;border-radius:6px;padding:10px 14px;background:var(--card);color:#1A1A1A;box-shadow:4px 4px 0 var(--accent);font-family:var(--ff-sans);font-size:13px;color:#4A4744}
+.stat b{display:block;font-weight:800;font-size:30px;line-height:1.05;color:var(--accent)}
+.stat:nth-child(2){--accent:var(--v2)}.stat:nth-child(3){--accent:var(--v3)}.stat:nth-child(4){--accent:var(--v5)}.stat:nth-child(5){--accent:var(--v7)}
+
+/* ---- bands ---- */
+.band{padding:72px 0}
+.band + .band{border-top:2px solid var(--rule-2)}
+.intro{font-family:var(--ff-text);font-size:clamp(18px,1.5vw,21px);line-height:1.5;margin-top:14px;border-left:6px solid var(--accent);padding-left:16px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.box{background:var(--card);color:#1A1A1A;border:2px solid #161412;box-shadow:5px 5px 0 var(--accent);padding:20px 22px;border-radius:3px}
+.box h3{margin-bottom:8px;color:var(--accent)}
+.box p{font-family:var(--ff-text);font-size:16px;line-height:1.5}
+.box.adv{box-shadow:5px 5px 0 var(--accent),inset 5px 0 0 0 color-mix(in srgb,var(--accent) 40%,white)}
+.box ul{margin:8px 0 0;padding-left:18px;font-family:var(--ff-sans);font-size:15px;line-height:1.45}
+.box li{margin-bottom:6px}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
+.rail{display:flex;flex-wrap:wrap;gap:12px 8px;align-items:center;margin-top:28px}
+.rail .tape{font-size:15px;padding:4px 10px 4px 8px;box-shadow:3px 3px 0 #161412}
+.rail i{font-family:var(--ff-comic);font-style:normal;font-size:20px;color:var(--accent)}
+
+/* ---- Young Founder Index radar ---- */
+.fi{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-top:40px}
+.fi svg{width:100%;height:auto;display:block}
+.fi .cap{font-family:var(--ff-sans);font-size:13px;color:var(--ink-2);margin-top:6px}
+@media (max-width:860px){.fi{grid-template-columns:1fr}}
+
+/* ---- shelf of covers ---- */
+.shelf{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;margin-top:30px;align-items:end}
+.shelf a{text-decoration:none;color:inherit}
+.shelf img{width:100%;height:auto;display:block;border:1px solid var(--rule);box-shadow:0 10px 20px rgba(0,0,0,.25);transition:transform .15s}
+.shelf a:hover img{transform:translateY(-6px) rotate(-1deg)}
+.shelf .vn{display:block;margin-top:10px;font-family:var(--ff-sans);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--vc)}
+.shelf .vt{display:block;font-family:var(--ff-display);font-weight:700;font-size:16px;line-height:1.15}
+.shelf .ch{display:block;font-family:var(--ff-sans);font-size:12px;color:var(--ink-2);margin-top:2px}
+@media (max-width:900px){.shelf{grid-template-columns:repeat(4,1fr)}}@media (max-width:560px){.shelf{grid-template-columns:repeat(2,1fr)}}
+.lm-svg{display:block;width:100%;height:auto;overflow:visible;margin-top:34px}
+.lm-road{fill:none;stroke:var(--rule);stroke-width:3;stroke-dasharray:1 5;stroke-linecap:round}
+.lm-seg{fill:none;stroke:var(--accent);stroke-width:6;stroke-linecap:round;opacity:.9}
+.lm-stop circle{fill:var(--card);stroke:var(--rule);stroke-width:1.2}
+.lm-stop text{font-family:var(--ff-sans);font-weight:700;font-size:8px;text-anchor:middle;fill:#5E5A55}
+.lm-stop.vol circle{fill:color-mix(in srgb,var(--accent) 12%,white);stroke:var(--accent);stroke-width:1.8}
+.lm-stop.vol text{fill:#1A1A1A}
+.lm-stop.cur circle{fill:var(--accent);stroke:#161412;stroke-width:2}.lm-stop.cur text{fill:#fff;font-size:9px}
+.lm-gate path{fill:var(--gold);stroke:#161412;stroke-width:1;stroke-linejoin:round}.lm-gate text{font-family:var(--ff-sans);font-weight:800;font-size:6px;fill:var(--ink)}
+.lm-here rect{fill:var(--yellow);stroke:#161412;stroke-width:1.2}.lm-here text{font-family:var(--ff-comic);font-size:8px;letter-spacing:.06em;text-anchor:middle;fill:#1A1A1A}
+.lm-vol text{font-family:var(--ff-comic);font-size:11px;letter-spacing:.05em;text-anchor:middle}
+
+/* ---- comic panel (comic.css .comic) ---- */
+.comic{position:relative;padding:18px 20px 8px;border:3px solid #161412;border-radius:6px 20px 8px 18px;background:radial-gradient(color-mix(in srgb,var(--accent) 20%,white) 22%,transparent 24%) 0 0/9px 9px,var(--comic-bg);box-shadow:8px 8px 0 var(--accent);color:#1A1A1A}
+.cm-cap{display:inline-block;max-width:100%;background:var(--yellow);border:2px solid #161412;padding:7px 12px;margin:4px 0 8px;font-family:var(--ff-sans);font-weight:500;font-size:15px;line-height:1.4;color:#1A1A1A;transform:rotate(-.5deg);box-shadow:3px 3px 0 #161412}
+.cm-cap.long{display:block;background:#FFF1B8;transform:none;font-family:var(--ff-text);font-size:15.5px;margin-top:10px}
+.cm-row{display:flex;align-items:flex-end;gap:10px;margin:10px 0 14px}
+.cm-row.R{flex-direction:row-reverse}
+.cm-who{flex:none;width:150px;margin:0;text-align:center;position:relative}
+.cm-img{display:block;width:auto;max-width:150px;height:190px;object-fit:contain;object-position:bottom;margin:0 auto -4px;filter:drop-shadow(3px 3px 0 rgba(0,0,0,.22))}
+.cm-img.flip{transform:scaleX(-1)}
+.cm-who figcaption{position:relative;z-index:2;margin-top:-8px}
+.cm-bub{flex:1;min-width:0;position:relative;background:#fff;border:2.5px solid #161412;border-radius:26px 24px 28px 22px;padding:12px 18px;margin-bottom:30px;box-shadow:3px 3px 0 var(--c,var(--accent))}
+.cm-bub p{font-family:var(--ff-bub);font-weight:600;font-size:16.5px;line-height:1.4;color:#161412}
+.cm-row.L .cm-bub::before,.cm-row.R .cm-bub::before{content:"";position:absolute;bottom:14px;border-style:solid}
+.cm-row.L .cm-bub::after,.cm-row.R .cm-bub::after{content:"";position:absolute;bottom:17px;border-style:solid}
+.cm-row.L .cm-bub::before{left:-22px;border-width:8px 22px 8px 0;border-color:transparent #161412 transparent transparent;transform:rotate(-14deg)}
+.cm-row.L .cm-bub::after{left:-16px;border-width:5px 17px 5px 0;border-color:transparent #fff transparent transparent;transform:rotate(-14deg)}
+.cm-row.R .cm-bub::before{right:-22px;border-width:8px 0 8px 22px;border-color:transparent transparent transparent #161412;transform:rotate(14deg)}
+.cm-row.R .cm-bub::after{right:-16px;border-width:5px 0 5px 17px;border-color:transparent transparent transparent #fff;transform:rotate(14deg)}
+@media (max-width:560px){.cm-who{width:84px}.cm-img{max-width:84px;height:110px}.cm-bub p{font-size:15px}}
+.spine{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-top:40px;align-items:start}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.steps li{counter-increment:s;display:flex;gap:10px;align-items:baseline;font-family:var(--ff-sans);font-size:14.5px;line-height:1.35;padding:7px 0;border-bottom:1px solid var(--rule-2)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--ff-comic);font-size:20px;color:var(--accent);-webkit-text-stroke:.8px #161412;paint-order:stroke fill;text-shadow:1.5px 1.5px 0 #161412;min-width:30px}
+.steps b{font-weight:800;display:block}.steps span{color:var(--ink-2);font-size:13px}
+@media (max-width:860px){.spine{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.tile{background:var(--card);color:#1A1A1A;border:2px solid #161412;border-radius:8px 8px 3px 3px;overflow:hidden;box-shadow:4px 4px 0 #161412}
+.tile .top{display:flex;justify-content:space-between;align-items:center;background:url(img/brick.svg) 0 0/160px 80px,var(--accent);background-blend-mode:multiply,normal;color:#fff;padding:7px 12px;font-family:var(--ff-comic);font-size:15px;letter-spacing:.08em}
+.tile .top i{font-style:normal;font-family:var(--ff-sans);font-weight:800;font-size:10px;letter-spacing:.06em;background:var(--gold);color:#1A1A1A;border-radius:3px;padding:2px 6px}
+.tile .in{padding:14px 16px 16px}
+.tile h3{font-family:var(--ff-display);font-weight:700;font-size:20px;margin-bottom:6px}
+.tile p{font-family:var(--ff-sans);font-size:14px;line-height:1.45;color:#4A4744}
+@media (max-width:900px){.four{grid-template-columns:1fr 1fr}}@media (max-width:520px){.four{grid-template-columns:1fr}}
+
+/* ---- meet the scholars ---- */
+.mt-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:30px}
+.mt{display:flex;flex-direction:column;align-items:center;text-align:center}
+.mt-bub{position:relative;background:#fff;color:#161412;border:2px solid #161412;border-radius:18px 16px 20px 14px;padding:10px 12px;min-height:88px;box-shadow:3px 3px 0 var(--c);z-index:2;font-family:var(--ff-bub);font-weight:600;font-size:13.5px;line-height:1.35;display:flex;align-items:center}
+.mt-bub::after{content:"";position:absolute;left:46%;bottom:-16px;border-style:solid;border-width:16px 7px 0 7px;border-color:#161412 transparent transparent transparent}
+.mt-fig{height:200px;display:flex;align-items:flex-end;justify-content:center;margin-top:10px;width:100%}
+.mt-fig img{max-height:100%;width:auto;filter:drop-shadow(3px 4px 0 rgba(0,0,0,.25))}
+.mt-tag{margin-top:-16px;position:relative;z-index:2}
+.mt-meta{font-family:var(--ff-sans);font-weight:700;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);margin-top:8px}
+@media (max-width:900px){.mt-grid{grid-template-columns:repeat(3,1fr)}}@media (max-width:560px){.mt-grid{grid-template-columns:repeat(2,1fr)}.mt-fig{height:150px}}
+
+/* ---- Teacher Edition register (te.css) ---- */
+.te{--te:#2D2B55}
+.te-band{display:inline-flex;align-items:baseline;gap:18px;background:#111;color:#fff;font-family:var(--ff-sans);font-weight:800;font-size:18px;letter-spacing:.2em;padding:12px 18px;margin-bottom:18px}
+.te-band small{font-weight:600;font-size:12px;letter-spacing:.06em;color:#ddd}
+.te h2{color:var(--te)}:root[data-theme="dark"] .te h2{color:var(--ink)}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .te h2{color:var(--ink)}}
+.te-h2{font-family:var(--ff-sans);font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--te);border-top:2px solid var(--te);padding-top:8px;margin:34px 0 12px}
+:root[data-theme="dark"] .te-h2{color:var(--ink);border-color:var(--ink)}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .te-h2{color:var(--ink);border-color:var(--ink)}}
+.te-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;align-items:start}
+@media (max-width:900px){.te-grid{grid-template-columns:1fr}}
+.tcard{border:1.5px solid var(--te);border-radius:8px;background:#fff;color:#1A1A1A;overflow:hidden}
+.tc-head{display:flex;align-items:center;gap:8px;background:var(--te);color:#fff;padding:9px 12px;flex-wrap:wrap}
+.tc-head .ico{width:14px;height:14px;border-radius:50%;background:#fff;flex:none}
+.tc-label{font-family:var(--ff-sans);font-weight:800;font-size:14px;letter-spacing:.06em}
+.tc-chips{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.te-chip{display:inline-block;font-family:var(--ff-sans);font-weight:700;font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:4px 6px;border:1px solid rgba(255,255,255,.75);border-radius:3px;color:#fff;white-space:nowrap}
+.te-chip.core{background:#fff;color:var(--te);border-color:#fff}.te-chip.core i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--te);margin-right:4px;vertical-align:1px}
+.tc-row{display:flex;gap:10px;padding:10px 14px 9px;border-top:1px solid #E6E5EE}
+.tc-k{flex:0 0 58px;font-family:var(--ff-sans);font-weight:800;font-size:11px;letter-spacing:.1em;color:var(--te);padding-top:3px}
+.tc-v{flex:1;font-family:var(--ff-sans);font-size:14.5px;line-height:1.45;min-width:0}
+.tc-v ol{margin:0;padding-left:18px}.tc-v li{margin-bottom:6px}.tc-v .q{font-weight:600}
+.tc-v .lf{display:block;color:var(--te);margin-top:3px;padding-left:10px;border-left:2px solid var(--te);font-size:13.5px}.tc-v .lf b{font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-right:4px}
+.tc-row.check{background:#E6E5EE;border-radius:0 0 7px 7px}.tc-row.check .tc-v{padding-left:20px;position:relative}
+.tc-row.check .tc-v::before{content:"";position:absolute;left:0;top:4px;width:12px;height:12px;border:1.5px solid var(--te);border-radius:2px;background:#fff}
+.te-days{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px}
+.te-day{border:1.5px solid var(--te);border-radius:8px;overflow:hidden;background:#fff;color:#1A1A1A}
+.te-day h4{margin:0;background:var(--te);color:#fff;font-family:var(--ff-sans);font-weight:800;font-size:14px;padding:9px 12px;letter-spacing:.05em;display:flex;justify-content:space-between;gap:8px}
+.te-day h4 small{font-weight:600;font-size:12px;opacity:.9}
+.te-day ul{list-style:none;margin:0;padding:10px 12px 8px}
+.te-day li{font-family:var(--ff-sans);font-weight:600;font-size:13.5px;line-height:1.4;display:flex;gap:7px;margin:5px 0}
+.te-day li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--te);flex:none;margin-top:5px}
+.te-day .dnote{font-family:var(--ff-sans);font-size:12.5px;color:#4A4744;padding:0 12px 12px}
+@media (max-width:860px){.te-days{grid-template-columns:1fr}}
+.te-give{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+.te-give>div{border:1.5px solid var(--te);border-radius:8px;padding:14px 16px;background:#fff;color:#1A1A1A}
+.te-give b{display:block;font-family:var(--ff-sans);font-weight:800;font-size:15px;color:var(--te);margin-bottom:6px}
+.te-give ul{margin:0;padding-left:18px;font-family:var(--ff-sans);font-size:14px;line-height:1.45}.te-give li{margin-bottom:5px}
+@media (max-width:860px){.te-give{grid-template-columns:1fr}}
+.offer{display:grid;grid-template-columns:1.3fr .8fr;gap:24px;margin-top:34px;background:var(--card);color:#1A1A1A;border:2px solid #161412;box-shadow:6px 6px 0 var(--te);padding:24px 26px;border-radius:3px}
+.offer h3{font-family:var(--ff-display);font-weight:700;font-size:24px;margin-top:8px}
+.offer p{font-family:var(--ff-text);font-size:16px;line-height:1.5}
+.price{font-family:var(--ff-sans);font-weight:800;font-size:30px;color:var(--te);line-height:1.05}
+.price small{display:block;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#4A4744;margin-bottom:4px}
+@media (max-width:860px){.offer{grid-template-columns:1fr}}
+.te-shelf{display:flex;gap:10px;margin-top:22px}.te-shelf img{flex:1;min-width:0;width:100%;height:auto;border:1px solid var(--rule);box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.safety{background:var(--safety);border-left:3px solid var(--ink);padding:12px 14px;font-family:var(--ff-sans);font-size:14px;line-height:1.5;margin-top:26px}
+
+/* ---- families / academy ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+ul.plain{list-style:none;margin:16px 0 0;padding:0}
+ul.plain li{font-family:var(--ff-sans);font-size:15.5px;line-height:1.45;padding:9px 0 9px 26px;border-bottom:1px solid var(--rule-2);position:relative}
+ul.plain li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border:2px solid var(--accent);border-radius:2px}
+.fc{width:240px;background:#fff;color:#161412;border:2px solid #161412;border-radius:12px;box-shadow:0 0 0 4px var(--gold),5px 6px 0 4px #161412;transform:rotate(1.6deg);font-family:var(--ff-sans);overflow:hidden;padding-bottom:10px;margin:14px auto 0}
+.fc-top{display:flex;justify-content:space-between;align-items:center;background:url(img/brick.svg) 0 0/140px 70px,var(--accent);background-blend-mode:multiply,normal;color:#fff;padding:6px 10px}
+.fc-kind{font-family:var(--ff-comic);font-size:14px;letter-spacing:.08em}.fc-no{font-weight:800;font-size:10px;letter-spacing:.06em;background:var(--gold);color:#1A1A1A;border-radius:3px;padding:2px 5px}
+.fc-mono{display:flex;justify-content:center;margin:12px 0 4px}.fc-mono span{width:60px;height:60px;border-radius:50%;border:2px solid #161412;background:radial-gradient(color-mix(in srgb,var(--accent) 40%,white) 22%,transparent 24%) 0 0/6px 6px,color-mix(in srgb,var(--accent) 12%,white);display:flex;align-items:center;justify-content:center;font-family:var(--ff-comic);font-size:24px;color:var(--accent)}
+.fc-name{text-align:center;font-family:var(--ff-display);font-weight:700;font-size:17px;padding:0 10px 8px;border-bottom:1.5px solid #161412}
+.fc dl{margin:8px 12px 0}.fc dt{font-weight:800;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:6px}.fc dd{margin:0;font-size:12.5px;line-height:1.35}
+.dark{background:url(img/brick.svg) 0 0/400px 200px,var(--v7);background-blend-mode:multiply,normal;color:#F5F0E8;border-top:3px solid #161412;border-bottom:3px solid #161412}
+.dark .muted{color:#E6DFD2}
+.dark table{background:var(--card);color:#1A1A1A}
+table{width:100%;border-collapse:collapse;font-family:var(--ff-sans);font-size:14.5px;background:var(--card);color:#1A1A1A;border:2px solid #161412;box-shadow:5px 5px 0 var(--accent)}
+th{text-align:left;background:#E6E5EE;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:10px 12px;border-bottom:2px solid #161412}
+td{padding:11px 12px;border-bottom:1px solid #D9D2C3;vertical-align:top}tr:last-child td{border-bottom:none}
+td.num{text-align:right;white-space:nowrap;font-weight:800;color:var(--accent)}
+.tablewrap{overflow:auto;margin-top:22px}
+
+/* ---- press / contact ---- */
+.press{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.press>div{background:var(--card);color:#1A1A1A;border:2px dashed #161412;padding:16px 18px;border-radius:4px}
+.press h3{font-size:16px;margin-bottom:6px;color:var(--accent)}.press p{font-family:var(--ff-sans);font-size:14px;line-height:1.45;color:#4A4744}
+@media (max-width:860px){.press{grid-template-columns:1fr}}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;margin-top:28px;background:var(--card);color:#1A1A1A;border:2px solid #161412;box-shadow:6px 6px 0 var(--accent);padding:26px 26px 22px;border-radius:3px}
+label{font-family:var(--ff-sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#4A4744;display:flex;flex-direction:column;gap:6px}
+input,select,textarea{font-family:var(--ff-text);font-size:17px;color:#1A1A1A;background:#fff;border:0;border-bottom:1.5px solid #1A1A1A;padding:8px 2px;border-radius:0;outline-offset:4px}
+textarea{grid-column:1/-1;min-height:96px;border:1.5px solid #1A1A1A;padding:10px;background:repeating-linear-gradient(to bottom,transparent 0 27px,#D9D2C3 27px 28px);line-height:28px}
+.full{grid-column:1/-1}
+.sent{display:none;margin-top:16px;background:var(--yellow);color:#1A1A1A;border:2px solid #161412;padding:12px 14px;font-family:var(--ff-sans);box-shadow:3px 3px 0 #161412}
+.sent.show{display:block}
+.copyrow{margin-top:18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-family:var(--ff-sans);font-size:15px}
+.copyrow code{font-family:var(--ff-sans);font-weight:800;background:var(--cream);padding:4px 8px;border:1.5px solid var(--ink);border-radius:3px}
+.copyrow button{font-family:var(--ff-sans);font-weight:700;font-size:13px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:6px 10px;border-radius:3px;cursor:pointer}
+.note{font-family:var(--ff-sans);font-size:13px;color:var(--ink-2);margin-top:14px}
+@media (max-width:640px){form{grid-template-columns:1fr}}
+.stamp{width:84px;height:84px;border:2.5px dashed var(--accent);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--accent);transform:rotate(-10deg);opacity:.9;flex:none;background:rgba(255,255,255,.6)}
+.stamp b{font-family:var(--ff-comic);font-size:20px;letter-spacing:.08em;line-height:1}.stamp span{font-family:var(--ff-sans);font-weight:700;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+footer{border-top:3px solid #161412;background:var(--indigo);color:#F5F0E8;padding:44px 0 36px}
+footer .claim{font-family:var(--ff-display);font-weight:700;font-size:clamp(22px,2.6vw,30px);line-height:1.2;text-shadow:2px 2px 0 #161412;max-width:30ch}
+footer .geo{height:27px;background:url(img/geo_border.svg) 0 0/90px 27px repeat-x,var(--indigo);margin:26px 0 22px;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--ff-sans);font-size:13.5px;color:#DAD4C8}
+.mk{font-family:var(--ff-mk);color:var(--accent);font-size:19px;transform:rotate(-4deg);display:inline-block}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">YO</span>Young Owners</a>
+    <nav class="primary" aria-label="Sections">
+      <a href="#program">Program</a><a href="#volumes">Volumes</a><a href="#inside">Inside</a><a href="#schools">Schools</a><a href="#families">Families</a><a href="#academy">Academy</a><a href="#press">Press</a><a href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-pressed="false" title="Switch light and dark">Dark</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="badge" aria-hidden="true"><span>GRADES</span><b>7–8</b></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="logo">YOUNG<br>OWNERS<small>SEE THE PROBLEM · BUILD THE SOLUTION · UNDERSTAND THE MONEY · OWN THE VALUE</small></div>
+      <h1>Most programs teach kids to run a lemonade stand. This one teaches them to own it.</h1>
+      <p class="cap">Young Owners is a 36-chapter, seven-volume workbook that carries a 13-year-old from a real problem and real customers through money, technology and AI, media and intellectual property, and the history of Black enterprise, to a venture they built, priced, tested and pitched at Demo Day.</p>
+      <div class="ctas"><a class="btn" href="#schools">Bring it to your school or site</a><a class="btn ink" href="#contact">Get the Program Guide (free)</a></div>
+    </div>
+    <div class="crew" aria-label="The six scholars of Young Owners" role="img">
+      <span class="sticker" style="left:4%;bottom:12%">STUDENT EDITION · 7 VOLUMES</span>
+      <img class="crew-art" src="img/crew_v33.webp" alt="" width="1285" height="1120">
+    </div>
+  </div>
+</section>
+
+<div class="stats" aria-label="At a glance">
+  <div class="wrap">
+    <div class="stat"><b>36</b>Chapters</div><div class="stat"><b>7</b>Volumes, 7 gates</div><div class="stat"><b>13</b>Sections in every chapter</div><div class="stat"><b>100</b>Young Founder Index points</div><div class="stat"><b>1</b>Demo Day</div>
+  </div>
+</div>
+
+<section class="band" id="program">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape">THE PROGRAM</span><span class="chip">AGES 12–14</span><span class="chip">CORE · ADVANCED · FOUNDER CHALLENGE</span></div>
+    <h2>The destination is ownership, not a business plan for its own sake.</h2>
+    <p class="intro measure">Youth entrepreneurship programs mostly end where they begin: a product idea, a poster, a sale. Young Owners teaches what they leave out, in order, and treats every scholar as capable.</p>
+    <div class="rail" aria-label="The learning progression">
+      <span class="tape">Self</span><i>→</i><span class="tape">Problem</span><i>→</i><span class="tape">Customer</span><i>→</i><span class="tape">Solution</span><i>→</i><span class="tape">Business</span><i>→</i><span class="tape">Money</span><i>→</i><span class="tape">Technology</span><i>→</i><span class="tape">Media</span><i>→</i><span class="tape">IP</span><i>→</i><span class="tape ink">Ownership</span><i>→</i><span class="tape">Venture</span><i>→</i><span class="tape">Impact</span>
+    </div>
+    <div class="cols">
+      <div class="box" style="--accent:var(--v2)"><h3>Real customers, real money</h3><p>Scholars interview customers, build and test a minimum viable product, set a price, project profit and cash flow, and keep a Venture Portfolio that grows by one page every chapter.</p></div>
+      <div class="box" style="--accent:var(--v4)"><h3>Technology, AI and media</h3><p>Four chapters on technology, artificial intelligence, automation and AI-assisted ventures, with a standing rule: AI can be wrong, can repeat bias and can fabricate. Six more on creativity, media, storytelling, audience, intellectual property and the creator company.</p></div>
+      <div class="box" style="--accent:var(--v6)"><h3>History and economic power</h3><p>A volume on Black enterprise, economic power, community entrepreneurship and generational assets, built from verifiable case studies, historical and contemporary, and taught as achievement and agency.</p></div>
+    </div>
+    <div class="fi">
+      <div>
+        <span class="tape sm" style="--accent:var(--v5)">THE YOUNG FOUNDER INDEX</span>
+        <h3 style="font-family:var(--ff-display);font-size:26px;margin-top:14px">Measured at the start and the end.</h3>
+        <p class="measure" style="margin-top:10px">Ten capabilities, ten points each: problem solving, business knowledge, financial intelligence, communication, creativity, technology and AI, leadership, research, execution, ownership mindset. The scholar scores, the educator scores, the two are averaged. It measures growth, not rank: nobody is compared with anyone else.</p>
+        <p class="fine" style="margin-top:10px">The shape shown is illustrative, not a scholar's data.</p>
+      </div>
+      <div><svg id="dial" viewBox="0 0 600 470" role="img" aria-label="The Young Founder Index: ten capabilities, ten points each, measured before and after"></svg><p class="cap">Baseline before Chapter 01 · conclusion after Chapter 36 · growth = conclusion − baseline</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="volumes">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape" style="--accent:var(--v3)">SEVEN VOLUMES</span><span class="chip">CONSUMABLE · 8.5 × 11 · COLOR</span></div>
+    <h2>One journey, seven consumable workbooks.</h2>
+    <p class="intro measure" style="--accent:var(--v3)">Each volume is a four-to-six-week session that ends in a gate. A site can run one volume, a semester, or the full year; a family can start with Volume I.</p>
+    <div class="shelf">
+      <a href="#inside" style="--vc:var(--v1)"><img src="img/yo_vol_i_se.webp" alt="Young Owners Volume I: The Founder, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume I</span><span class="vt">The Founder</span><span class="ch">Chapters 1–4</span></a><a href="#inside" style="--vc:var(--v2)"><img src="img/yo_vol_ii_se.webp" alt="Young Owners Volume II: The Entrepreneur, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume II</span><span class="vt">The Entrepreneur</span><span class="ch">Chapters 5–10</span></a><a href="#inside" style="--vc:var(--v3)"><img src="img/yo_vol_iii_se.webp" alt="Young Owners Volume III: The Money, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume III</span><span class="vt">The Money</span><span class="ch">Chapters 11–16</span></a><a href="#inside" style="--vc:var(--v4)"><img src="img/yo_vol_iv_se.webp" alt="Young Owners Volume IV: The Technologist, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume IV</span><span class="vt">The Technologist</span><span class="ch">Chapters 17–20</span></a><a href="#inside" style="--vc:var(--v5)"><img src="img/yo_vol_v_se.webp" alt="Young Owners Volume V: The Creator, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume V</span><span class="vt">The Creator</span><span class="ch">Chapters 21–26</span></a><a href="#inside" style="--vc:var(--v6)"><img src="img/yo_vol_vi_se.webp" alt="Young Owners Volume VI: The Owner, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume VI</span><span class="vt">The Owner</span><span class="ch">Chapters 27–30</span></a><a href="#inside" style="--vc:var(--v7)"><img src="img/yo_vol_vii_se.webp" alt="Young Owners Volume VII: The Venture, Student Edition cover" width="560" height="725" loading="lazy"><span class="vn">Volume VII</span><span class="vt">The Venture</span><span class="ch">Chapters 31–36</span></a>
+    </div>
+    <div class="lm"><svg class="lm-svg" viewBox="0 0 1000 92" xmlns="http://www.w3.org/2000/svg"><path class="lm-road" d="M6 52 H994"/><path class="lm-seg" style="--accent:#A3412A" d="M14.0 52 H97.3"/><g class="lm-vol"><text x="55.7" y="30" fill="#A3412A">I</text></g><g class="lm-gate" transform="translate(111.2 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G1</text></g><path class="lm-seg" style="--accent:#8F5A0C" d="M125.1 52 H263.9"/><g class="lm-vol"><text x="194.5" y="30" fill="#8F5A0C">II</text></g><g class="lm-gate" transform="translate(277.8 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G2</text></g><path class="lm-seg" style="--accent:#2F6B45" d="M291.7 52 H430.6"/><g class="lm-vol"><text x="361.1" y="30" fill="#2F6B45">III</text></g><g class="lm-gate" transform="translate(444.5 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G3</text></g><path class="lm-seg" style="--accent:#0F6672" d="M458.3 52 H541.7"/><g class="lm-vol"><text x="500.0" y="30" fill="#0F6672">IV</text></g><g class="lm-gate" transform="translate(555.5 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G4</text></g><path class="lm-seg" style="--accent:#2B5C9E" d="M569.4 52 H708.3"/><g class="lm-vol"><text x="638.9" y="30" fill="#2B5C9E">V</text></g><g class="lm-gate" transform="translate(722.2 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G5</text></g><path class="lm-seg" style="--accent:#6E4596" d="M736.1 52 H819.4"/><g class="lm-vol"><text x="777.7" y="30" fill="#6E4596">VI</text></g><g class="lm-gate" transform="translate(833.3 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G6</text></g><path class="lm-seg" style="--accent:#8A2C52" d="M847.1 52 H986.0"/><g class="lm-vol"><text x="916.6" y="30" fill="#8A2C52">VII</text></g><g class="lm-gate" transform="translate(995.0 54)"><path d="M0 0 V-18 L12 -14 L0 -10"/><text x="-7" y="26">G7</text></g><g class="lm-stop vol" style="--accent:#A3412A"><circle cx="14.0" cy="52" r="5.5"/><text x="14.0" y="54">1</text></g><g class="lm-stop" style="--accent:#A3412A"><circle cx="41.8" cy="52" r="5.5"/><text x="41.8" y="54">2</text></g><g class="lm-stop" style="--accent:#A3412A"><circle cx="69.5" cy="52" r="5.5"/><text x="69.5" y="54">3</text></g><g class="lm-stop" style="--accent:#A3412A"><circle cx="97.3" cy="52" r="5.5"/><text x="97.3" y="54">4</text></g><g class="lm-stop vol" style="--accent:#8F5A0C"><circle cx="125.1" cy="52" r="5.5"/><text x="125.1" y="54">5</text></g><g class="lm-stop" style="--accent:#8F5A0C"><circle cx="152.9" cy="52" r="5.5"/><text x="152.9" y="54">6</text></g><g class="lm-stop" style="--accent:#8F5A0C"><circle cx="180.6" cy="52" r="5.5"/><text x="180.6" y="54">7</text></g><g class="lm-stop" style="--accent:#8F5A0C"><circle cx="208.4" cy="52" r="5.5"/><text x="208.4" y="54">8</text></g><g class="lm-stop" style="--accent:#8F5A0C"><circle cx="236.2" cy="52" r="5.5"/><text x="236.2" y="54">9</text></g><g class="lm-stop" style="--accent:#8F5A0C"><circle cx="263.9" cy="52" r="5.5"/><text x="263.9" y="54">10</text></g><g class="lm-stop vol" style="--accent:#2F6B45"><circle cx="291.7" cy="52" r="5.5"/><text x="291.7" y="54">11</text></g><g class="lm-stop" style="--accent:#2F6B45"><circle cx="319.5" cy="52" r="5.5"/><text x="319.5" y="54">12</text></g><g class="lm-stop" style="--accent:#2F6B45"><circle cx="347.3" cy="52" r="5.5"/><text x="347.3" y="54">13</text></g><g class="lm-stop" style="--accent:#2F6B45"><circle cx="375.0" cy="52" r="5.5"/><text x="375.0" y="54">14</text></g><g class="lm-stop" style="--accent:#2F6B45"><circle cx="402.8" cy="52" r="5.5"/><text x="402.8" y="54">15</text></g><g class="lm-stop" style="--accent:#2F6B45"><circle cx="430.6" cy="52" r="5.5"/><text x="430.6" y="54">16</text></g><g class="lm-stop vol" style="--accent:#0F6672"><circle cx="458.3" cy="52" r="5.5"/><text x="458.3" y="54">17</text></g><g class="lm-stop" style="--accent:#0F6672"><circle cx="486.1" cy="52" r="5.5"/><text x="486.1" y="54">18</text></g><g class="lm-stop" style="--accent:#0F6672"><circle cx="513.9" cy="52" r="5.5"/><text x="513.9" y="54">19</text></g><g class="lm-stop" style="--accent:#0F6672"><circle cx="541.7" cy="52" r="5.5"/><text x="541.7" y="54">20</text></g><g class="lm-stop vol" style="--accent:#2B5C9E"><circle cx="569.4" cy="52" r="5.5"/><text x="569.4" y="54">21</text></g><g class="lm-stop" style="--accent:#2B5C9E"><circle cx="597.2" cy="52" r="5.5"/><text x="597.2" y="54">22</text></g><g class="lm-stop" style="--accent:#2B5C9E"><circle cx="625.0" cy="52" r="5.5"/><text x="625.0" y="54">23</text></g><g class="lm-stop" style="--accent:#2B5C9E"><circle cx="652.7" cy="52" r="5.5"/><text x="652.7" y="54">24</text></g><g class="lm-stop" style="--accent:#2B5C9E"><circle cx="680.5" cy="52" r="5.5"/><text x="680.5" y="54">25</text></g><g class="lm-stop" style="--accent:#2B5C9E"><circle cx="708.3" cy="52" r="5.5"/><text x="708.3" y="54">26</text></g><g class="lm-stop vol" style="--accent:#6E4596"><circle cx="736.1" cy="52" r="5.5"/><text x="736.1" y="54">27</text></g><g class="lm-stop" style="--accent:#6E4596"><circle cx="763.8" cy="52" r="5.5"/><text x="763.8" y="54">28</text></g><g class="lm-stop" style="--accent:#6E4596"><circle cx="791.6" cy="52" r="5.5"/><text x="791.6" y="54">29</text></g><g class="lm-stop" style="--accent:#6E4596"><circle cx="819.4" cy="52" r="5.5"/><text x="819.4" y="54">30</text></g><g class="lm-stop vol" style="--accent:#8A2C52"><circle cx="847.1" cy="52" r="5.5"/><text x="847.1" y="54">31</text></g><g class="lm-stop" style="--accent:#8A2C52"><circle cx="874.9" cy="52" r="5.5"/><text x="874.9" y="54">32</text></g><g class="lm-stop" style="--accent:#8A2C52"><circle cx="902.7" cy="52" r="5.5"/><text x="902.7" y="54">33</text></g><g class="lm-stop" style="--accent:#8A2C52"><circle cx="930.5" cy="52" r="5.5"/><text x="930.5" y="54">34</text></g><g class="lm-stop" style="--accent:#8A2C52"><circle cx="958.2" cy="52" r="5.5"/><text x="958.2" y="54">35</text></g><g class="lm-stop cur" style="--accent:#8A2C52"><circle cx="986.0" cy="52" r="7.5"/><text x="986.0" y="54">36</text></g><g class="lm-here" transform="translate(966.0 82)"><rect x="-32" y="-14" width="64" height="14" rx="2"/><text x="0" y="-3.5">DEMO DAY</text></g></svg></div>
+    <p class="fine" style="margin-top:10px">Student Edition volumes run 105 to 161 pages; the seven together carry 36 chapters and about 97 hours of designed lesson time. Each Teacher Edition volume runs 89 to 142 pages. A gold flag marks each gate; Demo Day is Chapter 36.</p>
+    <div class="four">
+      <div class="tile" style="--accent:var(--v1)"><div class="top">THE SPINE<i>36</i></div><div class="in"><h3>Venture Portfolio</h3><p>Thirty-six artifacts, from the Founder Profile to the Final Business Plan. One page every chapter.</p></div></div>
+      <div class="tile" style="--accent:var(--v3)"><div class="top">PROGRESSION<i>7</i></div><div class="in"><h3>Seven gates</h3><p>A one-period assessment at the end of every volume: knowledge, application, portfolio, reflection.</p></div></div>
+      <div class="tile" style="--accent:var(--v5)"><div class="top">MEASUREMENT<i>100</i></div><div class="in"><h3>Young Founder Index</h3><p>Ten capabilities, ten points each, at the start and the end.</p></div></div>
+      <div class="tile" style="--accent:var(--v7)"><div class="top">CAPSTONE<i>CH 36</i></div><div class="in"><h3>Demo Day</h3><p>The scholars pitch the ventures they built. Families come.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="inside">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape" style="--accent:var(--v1)">A LOOK INSIDE</span><span class="chip">CHAPTER 01 · KNOW YOURSELF</span></div>
+    <h2>Six scholars carry the book. Chapter 01 opens at a kitchen table.</h2>
+    <p class="intro measure">They disagree, test ideas, make mistakes and revise — and they help a reader with the page. Every chapter is written to the scholar, in the book's own comic register.</p>
+    <div class="comic" style="margin-top:30px;--accent:var(--v1)">
+      <span class="cm-cap">Chapter 01 · WHY IT MATTERS — Dixon and Donavonne sat at a kitchen table, two notebooks open, arguing about what to build first.</span>
+      <div class="cm-row L c-dixon"><figure class="cm-who"><img class="cm-img " src="img/pose_dixon_talk.webp" alt="Dixon" width="283" height="700" loading="lazy"><figcaption><span class="tag t-dixon xs"><span class="tag-txt">Dixon</span></span></figcaption></figure><div class="cm-bub"><p>I'm starting the AI tutoring thing. I already do it every Thursday with the coding club. I have a laptop. I have the software. I spend zero dollars to start.</p></div></div>
+      <div class="cm-row R c-donavonne"><figure class="cm-who"><img class="cm-img " src="img/pose_donavonne_talk.webp" alt="Donavonne" width="283" height="700" loading="lazy"><figcaption><span class="tag t-donavonne xs"><span class="tag-txt">Donavonne</span></span></figcaption></figure><div class="cm-bub"><p>Cool. But I already have five pairs of used basketball shoes in my garage. I cleaned them, took photos, posted them… and sold three pairs yesterday for $36. That's real money. Real. Money.</p></div></div>
+      <div class="cm-row L c-serenity"><figure class="cm-who"><img class="cm-img flip" src="img/pose_serenity_point.webp" alt="Serenity" width="283" height="700" loading="lazy"><figcaption><span class="tag t-serenity xs"><span class="tag-txt">Serenity</span></span></figcaption></figure><div class="cm-bub"><p>You're both missing the point. You picked ventures that match what you already do. The question isn't which venture makes more money. It's which one you can actually start today with what you already have.</p></div></div>
+      <span class="cm-cap long">That is why self-awareness matters. Owners who know themselves avoid ventures that drain them and pursue ventures that use their natural strengths. — <em>Chapter 01, Know Yourself</em></span>
+    </div>
+    <div class="mt-grid">
+      <div class="mt c-dixon"><div class="mt-bub">Tests AI tools and questions assumptions. Her strongest category: Habits.</div><div class="mt-fig"><img src="img/pose_dixon_think.webp" alt="Dixon" loading="lazy"></div><div class="mt-tag"><span class="tag t-dixon sm"><span class="tag-txt">Dixon</span></span></div><div class="mt-meta">AI tutoring · coding club</div></div>
+      <div class="mt c-donavonne"><div class="mt-bub">Applies business to sports. Sold three pairs of shoes before lunch. Strongest: Network.</div><div class="mt-fig"><img src="img/pose_donavonne_talk.webp" alt="Donavonne" loading="lazy"></div><div class="mt-tag"><span class="tag t-donavonne sm"><span class="tag-txt">Donavonne</span></span></div><div class="mt-meta">Resale · the garage</div></div>
+      <div class="mt c-zaire"><div class="mt-bub">Explores the creator economy and checks every source twice.</div><div class="mt-fig"><img src="img/pose_zaire_think.webp" alt="Zaire" loading="lazy"></div><div class="mt-tag"><span class="tag t-zaire sm"><span class="tag-txt">Zaire</span></span></div><div class="mt-meta">Media · research</div></div>
+      <div class="mt c-serenity"><div class="mt-bub">Designs products and brands, usually on a napkin first.</div><div class="mt-fig"><img src="img/pose_serenity_write.webp" alt="Serenity" loading="lazy"></div><div class="mt-tag"><span class="tag t-serenity sm"><span class="tag-txt">Serenity</span></span></div><div class="mt-meta">Design · the sketchbook</div></div>
+      <div class="mt c-jayceon"><div class="mt-bub">Builds for his neighborhood, one plate at a time.</div><div class="mt-fig"><img src="img/pose_jayceon_cheer.webp" alt="Jay’Ceon" loading="lazy"></div><div class="mt-tag"><span class="tag t-jayceon sm"><span class="tag-txt">Jay’Ceon</span></span></div><div class="mt-meta">Food · community</div></div>
+      <div class="mt c-deborah"><div class="mt-bub">Models the money. If the numbers don't work, the idea doesn't either.</div><div class="mt-fig"><img src="img/pose_deborah_point.webp" alt="Deborah" loading="lazy"></div><div class="mt-tag"><span class="tag t-deborah sm"><span class="tag-txt">Deborah</span></span></div><div class="mt-meta">The numbers · the calculator</div></div>
+    </div>
+    <div class="spine">
+      <div>
+        <span class="tape sm" style="--accent:var(--v2)">INSIDE EVERY CHAPTER</span>
+        <h3 style="font-family:var(--ff-display);font-size:26px;margin-top:14px">The same thirteen sections, in the same order.</h3>
+        <p class="muted" style="margin-top:10px">So a scholar always knows where they are and a facilitator always knows what comes next. Activities are labelled <span class="chip">CORE</span> <span class="chip">ADVANCED</span> and <span class="chip">FOUNDER CHALLENGE</span> — never easy, medium, hard. At least 30% of the learning happens off the page.</p>
+        <p style="margin-top:18px"><span class="mk">← every chapter adds one page to the Venture Portfolio</span></p>
+      </div>
+      <ol class="steps" style="--accent:var(--v2)" aria-label="The thirteen sections of a chapter">
+        <li><div><b>Big Idea</b><span>One memorable principle</span></div></li><li><div><b>Why It Matters</b><span>Real-world context</span></div></li><li><div><b>Learn</b><span>Core instruction</span></div></li><li><div><b>Look Closer</b><span>A real case study</span></div></li><li><div><b>The Numbers</b><span>Data, a chart or a calculation</span></div></li><li><div><b>Think Like an Owner</b><span>A contrarian or strategic question</span></div></li><li><div><b>Try It</b><span>A short activity</span></div></li><li><div><b>Build It</b><span>The substantive workbook exercise</span></div></li><li><div><b>Real World</b><span>Off the page: interview, observe, test</span></div></li><li><div><b>Founder Challenge</b><span>Advanced application</span></div></li><li><div><b>Reflect</b><span>What was learned</span></div></li><li><div><b>Add It to Your Venture</b><span>One page into the Venture Portfolio</span></div></li><li><div><b>Checkpoint</b><span>Knowledge and application</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band te" id="schools">
+  <div class="wrap">
+    <span class="te-band">TEACHER EDITION<small>For educators — contains answer keys</small></span>
+    <h2>Written for the facilitator as much as the teacher.</h2>
+    <p class="intro measure" style="--accent:var(--te)">You do not need a business background to teach this course. The Teacher Edition gives every chapter a minute-by-minute pacing plan, objectives, standards alignment, a teaching card for all thirteen sections, differentiation for English learners and scholars with IEPs or 504 plans, misconceptions to watch, rubrics, safety and privacy notes, a family letter, vocabulary and the answer key.</p>
+    <div class="te-grid">
+      <div>
+        <div class="te-h2">Every section has a teaching card</div>
+        <div class="tcard"><div class="tc-head"><span class="ico"></span><span class="tc-label">THE NUMBERS</span><span class="tc-chips"><span class="te-chip core"><i></i>CORE</span><span class="te-chip">8 min</span><span class="te-chip">Individual</span><span class="te-chip">Day 1</span></span></div>
+          <div class="tc-row"><div class="tc-k">WHY</div><div class="tc-v">Ground the chapter in real data about teen attitudes toward entrepreneurship.</div></div>
+          <div class="tc-row"><div class="tc-k">DO</div><div class="tc-v">Read the statistics aloud. Ask scholars to work individually on the arithmetic: 69 − 66 = 3 (the difference between 2017 and 2020 survey results). Ask: “What does it mean that 66% of teens are interested in starting a business, but 29% think it's ‘too risky’?”</div></div>
+          <div class="tc-row"><div class="tc-k">ASK</div><div class="tc-v"><ol><li><span class="q">“The 2017 and 2020 surveys measured different groups of teens, not the same group tracked over time. Why does that matter?”</span><span class="lf"><b>Listen for</b> separate samples; a 3-point gap is not a trend.</span></li><li><span class="q">“If 13% of current business owners started at 18 or younger, what does that tell you about starting young?”</span><span class="lf"><b>Listen for</b> starting young is not unusual.</span></li></ol></div></div>
+          <div class="tc-row check"><div class="tc-k">CHECK</div><div class="tc-v">Scholars note that the two figures come from separate surveys, and that 13% shows starting young is not unusual.</div></div>
+        </div>
+        <p class="fine" style="margin-top:10px">Chapter 01, THE NUMBERS. In the printed Teacher Edition a picture of the Student Edition page sits beside every card.</p>
+      </div>
+      <div>
+        <div class="te-h2">Three ways to run 36 chapters in a school year</div>
+        <div class="te-days">
+          <div class="te-day"><h4>THREE DAYS<small>180–195 min</small></h4><ul><li>Two 60-minute sessions plus an Owner's Lab</li><li>The full chapter: core sections, Founder Challenge, supervised real-world task, portfolio time</li><li>The gate lands in the Lab</li></ul><p class="dnote">Expanded-learning and afterschool programs, community and faith-based programs.</p></div>
+          <div class="te-day"><h4>TWO DAYS<small>120–150 min</small></h4><ul><li>Two sessions of 60–75 minutes; the core track</li><li>The real-world task goes home with the family prompt</li><li>Founder Challenge optional</li></ul><p class="dnote">Sites with two enrichment slots; a school-day elective twice a week.</p></div>
+          <div class="te-day"><h4>ONE SATURDAY<small>180 min</small></h4><ul><li>One three-hour session</li><li>The full chapter plus lab</li><li>Families present for the last 20 minutes</li></ul><p class="dnote">Saturday academies; Young Owners Academy.</p></div>
+        </div>
+        <div class="te-h2">What a site receives, and gives</div>
+        <div class="te-give">
+          <div><b>A site receives</b><ul><li>Seven consumable Student Edition volumes and the Venture Portfolio</li><li>A Teacher Edition per volume and the Program Guide</li><li>The Assessment Pack: 36 checkpoints with keys, 7 gates, the Young Founder Index instrument, rubrics</li><li>Facilitator certification: two days, twelve hours</li><li>For licensed sites: the digital suite, slide decks, Demo Day kit and the Young Owners Academy name</li></ul></div>
+          <div><b>A site gives</b><ul><li>Three hours a week for 36 weeks, or one of the other templates</li><li>A room and an adult of the site's in the room</li><li>Permission for real-world tasks under the program's safety rules</li><li>For Founding Sites: attendance and de-identified Young Founder Index data, and a short case study</li></ul></div>
+        </div>
+        <div class="te-shelf" aria-label="Teacher Edition covers"><img src="img/yo_vol_i_te.webp" alt="Teacher Edition, Volume I" width="560" height="725" loading="lazy"><img src="img/yo_vol_ii_te.webp" alt="Teacher Edition, Volume II" width="560" height="725" loading="lazy"><img src="img/yo_vol_iii_te.webp" alt="Teacher Edition, Volume III" width="560" height="725" loading="lazy"><img src="img/yo_vol_iv_te.webp" alt="Teacher Edition, Volume IV" width="560" height="725" loading="lazy"><img src="img/yo_vol_v_te.webp" alt="Teacher Edition, Volume V" width="560" height="725" loading="lazy"><img src="img/yo_vol_vi_te.webp" alt="Teacher Edition, Volume VI" width="560" height="725" loading="lazy"><img src="img/yo_vol_vii_te.webp" alt="Teacher Edition, Volume VII" width="560" height="725" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="offer">
+      <div>
+        <span class="tape sm" style="--accent:var(--te)">FOUNDING SITES · 2027</span>
+        <h3>Volumes I–II, ten weeks, at no cost to the site.</h3>
+        <p style="margin-top:10px">A limited number of schools and expanded-learning sites in Watts, South Los Angeles and Compton receive materials and a certified facilitator for a spring 2027 pilot, in exchange for before-and-after Young Founder Index data and a case study. Fall 2027 cohorts follow.</p>
+        <div class="ctas"><a class="btn" href="#contact">Request a 30-minute presentation</a></div>
+      </div>
+      <div>
+        <p class="price"><small>Classroom kit · one volume · 25 scholars</small>$449</p>
+        <p class="price" style="margin-top:16px"><small>Full-year class set · 25 scholars</small>$2,495</p>
+        <p class="fine" style="margin-top:12px">Teacher Edition $34.99 print / $29.99 PDF per volume · Program Guide free · Site license $1,500 a year · Facilitator certification $695 · Refill pack $349</p>
+      </div>
+    </div>
+    <div class="safety"><b>Standards and safety.</b> The Teacher Edition is aligned to the California standards used by Los Angeles Unified and other California districts: CA CCSS ELA/Literacy and Mathematics (grades 7–8), History–Social Science, Computer Science (6–8), the CTE Model Curriculum Standards including the Entrepreneurship/Self-Employment pathway, and the ELD Standards. Review of the alignment by California-credentialed educators is under way; signed reviewer attestations will be shared with districts on request once complete. Financial lessons use simulations only. AI activities follow the school's current rule, and every one has a printed path; in Los Angeles Unified, student access to generative AI on district devices is paused for 2026–27, so AI steps run as teacher demonstrations. Real-world tasks happen with an adult's knowledge and collect no private information.</div>
+  </div>
+</section>
+
+<section class="band" id="families" style="--accent:var(--v2)">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape">FOR FAMILIES</span><span class="chip">VOLUME I · $16.99</span><span class="chip">THE SET · $99</span></div>
+    <h2>A program a family can run at the kitchen table.</h2>
+    <div class="two">
+      <div>
+        <p class="measure">Every chapter is written to the scholar. The real-world tasks (interview a business owner you know, observe a store, test a prototype on three people) are designed to happen with an adult's knowledge, in familiar places, and never collect anyone's private information. The Program Guide, free as a PDF, carries the pacing and the family letters.</p>
+        <ul class="plain">
+          <li>One volume, $16.99 · The seven-volume set with the Venture Portfolio, $99</li>
+          <li>All 36 chapters are complete and the seven volumes are in final production. Volume I: The Founder ships winter 2026–27; the full set in early 2027</li>
+          <li>Teacher Edition available to homeschool families per volume, print or PDF</li>
+        </ul>
+        <div class="ctas"><a class="btn" href="#contact">Join the list for Volume I</a></div>
+      </div>
+      <div>
+        <aside class="fc" style="--accent:var(--v2)"><div class="fc-top"><span class="fc-kind">FOUNDER CARD</span><span class="fc-no">CH 01</span></div><div class="fc-mono"><span>YOU</span></div><div class="fc-name">The scholar at your table</div>
+          <dl><dt>Built</dt><dd>A Founder Profile in Chapter 01; a company by Chapter 36</dd><dt>Started with</dt><dd>Time, skills and their word — the three things an owner already owns</dd><dt>By the numbers</dt><dd>36 chapters · 36 portfolio pages · 7 gates · 1 Demo Day</dd><dt>Owner move</dt><dd>Picks the venture they can start today with what they already have</dd></dl></aside>
+        <p class="fine" style="text-align:center;margin-top:16px">Founder Cards appear in LOOK CLOSER: real founders, historical and contemporary, by the numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band dark" id="academy">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape ink" style="--accent:var(--gold)">YOUNG OWNERS ACADEMY</span><span class="chip" style="border-color:#F5F0E8;color:#F5F0E8">FLAGSHIP COHORT</span></div>
+    <h2 style="color:#fff;text-shadow:3px 3px 0 #161412">Twenty-five scholars. Thirty-six weeks. One Demo Day.</h2>
+    <div class="two">
+      <div>
+        <p class="measure">The Academy is the program's flagship cohort, hosted at a partner site and led by a certified facilitator: every volume, the Venture Portfolio, the Young Founder Index at the start and the end, and a Demo Day where the scholars pitch the ventures they built. Seats are sponsored. Families never pay.</p>
+        <p class="measure muted" style="margin-top:12px">First cohort: fall 2027, Los Angeles. Partner sites and sponsors are being confirmed now.</p>
+        <div class="ctas"><a class="btn" href="#contact">Sponsor a cohort</a><a class="btn paper" href="#contact">Host a cohort</a></div>
+      </div>
+      <div class="tablewrap" style="margin-top:0;--accent:var(--gold)">
+        <table><thead><tr><th>Sponsor level</th><th>Funds</th><th></th></tr></thead><tbody>
+          <tr><td>A seat</td><td>One scholar for a year</td><td class="num">$800</td></tr>
+          <tr><td>A cohort</td><td>25 scholars, 36 weeks, facilitator, materials, Demo Day</td><td class="num">$20,000</td></tr>
+          <tr><td>A site for three years</td><td>Three cohorts at one host</td><td class="num">$55,000</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="press" style="--accent:var(--v5)">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape">PRESS</span><span class="chip">KIT AVAILABLE ON REQUEST</span></div>
+    <h2>Press kit</h2>
+    <p class="intro measure">Text may be quoted. Illustrations may be reproduced in coverage of Young Owners with credit to E.A.T. Media. No scholar images are released without a signed family consent.</p>
+    <div class="press">
+      <div><h3>Fact sheet</h3><p>What it is, who it is for, the seven volumes, the Young Founder Index, delivery templates, prices, availability.</p></div>
+      <div><h3>Program overview</h3><p>The problem, the destination, how it is taught, what a scholar leaves with, what a site gets and gives.</p></div>
+      <div><h3>Founder bio</h3><p>D. Antione Dixon: E.A.T. Media, The Black Genius Files, Defy Ventures, CSU Dominguez Hills and the Watts of Power Teaching Fellowship.</p></div>
+      <div><h3>FAQ</h3><p>Standards, who can teach it, AI policy, financial safety, real-world tasks, cost.</p></div>
+      <div><h3>Images</h3><p>Six character references, fourteen Student and Teacher Edition covers, chapter openers, fourteen vector diagrams.</p></div>
+      <div><h3>Contact</h3><p>eatmediatv@gmail.com</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact" style="--accent:var(--v4)">
+  <div class="wrap">
+    <div class="sec-head"><span class="tape">CONTACT</span><span class="stamp" aria-hidden="true"><b>FILED</b><span>we reply in 2 days</span></span></div>
+    <h2>Tell us who you are and what you need.</h2>
+    <p class="intro measure">Schools and sites: request a 30-minute presentation. Families: join the list for Volume I. Funders: ask for the sponsor brief. Press: ask for the kit.</p>
+    <form id="interest" novalidate>
+      <label>Name<input id="f-name" name="name" type="text" autocomplete="name" required></label>
+      <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+      <label>Organization<input id="f-org" name="org" type="text" autocomplete="organization"></label>
+      <label>I am a<select id="f-role" name="role"><option>School or district leader</option><option>Afterschool or community program</option><option>Teacher or facilitator</option><option>Parent or family</option><option>Funder or sponsor</option><option>Press</option><option>Other</option></select></label>
+      <label class="full">What are you looking for?<select id="f-ask" name="ask"><option>A 30-minute presentation</option><option>The Program Guide (free PDF)</option><option>Volume I when it ships</option><option>Facilitator certification</option><option>The sponsor brief</option><option>The press kit</option></select></label>
+      <textarea id="f-msg" name="message" aria-label="Message" placeholder="Anything we should know: your site, your grades, your timeline."></textarea>
+      <div class="full"><button class="btn" type="submit" id="f-submit">Send</button></div>
+    </form>
+    <div class="sent" id="sent" role="status"></div>
+    <div class="copyrow">Or write to <code id="mail">eatmediatv@gmail.com</code><button type="button" id="copy">Copy address</button></div>
+    <p class="note">Send opens your email app with your message addressed to the Young Owners team.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="claim">See the problem. Build the solution. Understand the money. Own the value.</div>
+    <div class="geo" aria-hidden="true"></div>
+    <div class="row"><div>Young Owners is published by E.A.T. Media, Los Angeles. © 2026 E.A.T. Media LLC. Written and produced by D. Antione Dixon.</div><div>Aligned to California standards.</div></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // theme toggle (per-viewer convenience; storage is best-effort)
+  var root=document.documentElement, btn=document.getElementById('theme');
+  function apply(t){ root.setAttribute('data-theme',t||''); var dark=t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches); btn.textContent=dark?'Light':'Dark'; btn.setAttribute('aria-pressed',dark?'true':'false'); draw(); }
+  var saved=null; try{ saved=localStorage.getItem('yo-theme'); }catch(e){}
+  btn.addEventListener('click',function(){ var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches); var t=dark?'light':'dark'; try{ localStorage.setItem('yo-theme',t); }catch(e){} apply(t); });
+  // Young Founder Index radar in the book palette. Illustrative shape, not a scholar's data.
+  var caps=["Problem solving","Business knowledge","Financial intelligence","Communication","Creativity","Technology & AI","Leadership","Research","Execution","Ownership mindset"];
+  var before=[4,3,2,5,6,3,5,3,4,3], after=[8,8,7,8,9,8,8,7,8,9];
+  var svg=document.getElementById('dial'); var NS='http://www.w3.org/2000/svg', cx=300, cy=212, R=140, n=caps.length;
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function pt(i,v){var a=-Math.PI/2+i*2*Math.PI/n, r=R*v/10;return [cx+r*Math.cos(a), cy+r*Math.sin(a)];}
+  function draw(){ if(!svg) return; while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var cs=getComputedStyle(root); var ink=cs.getPropertyValue('--ink-2').trim()||'#4A4744', rule=cs.getPropertyValue('--rule').trim()||'#8C8579';
+    var indigo='#2D2B55', gold='#C8A961', pacific='#2B5C9E';
+    [2,4,6,8,10].forEach(function(v){var p=[];for(var i=0;i<n;i++){p.push(pt(i,v).join(','));}svg.appendChild(el('polygon',{points:p.join(' '),fill:'none',stroke:rule,'stroke-width':1,'stroke-dasharray':'1 4'}));});
+    for(var i=0;i<n;i++){var q=pt(i,10);svg.appendChild(el('line',{x1:cx,y1:cy,x2:q[0],y2:q[1],stroke:rule,'stroke-width':1}));}
+    function poly(vals,fill,stroke,op){var p=[];for(var i=0;i<n;i++){p.push(pt(i,vals[i]).join(','));}svg.appendChild(el('polygon',{points:p.join(' '),fill:fill,'fill-opacity':op,stroke:stroke,'stroke-width':3,'stroke-linejoin':'round'}));}
+    poly(before,pacific,pacific,0.22); poly(after,gold,'#161412',0.55);
+    for(var j=0;j<n;j++){var a=-Math.PI/2+j*2*Math.PI/n;var tx=cx+(R+26)*Math.cos(a),ty=cy+(R+26)*Math.sin(a);var t=el('text',{x:tx,y:ty+4,'text-anchor':Math.abs(Math.cos(a))<0.2?'middle':(Math.cos(a)>0?'start':'end'),'font-family':'Atkinson Hyperlegible Next, Arial, sans-serif','font-size':'12','font-weight':'700',fill:ink});t.textContent=caps[j];svg.appendChild(t);}
+    var legend=[['Baseline',pacific],['Chapter 36',gold]];legend.forEach(function(L,k){var y=452;var x=190+k*130;svg.appendChild(el('rect',{x:x,y:y-10,width:14,height:14,fill:L[1],stroke:'#161412','stroke-width':1.5}));var t=el('text',{x:x+20,y:y+2,'font-family':'Atkinson Hyperlegible Next, Arial, sans-serif','font-size':'12','font-weight':'700',fill:ink});t.textContent=L[0];svg.appendChild(t);});
+  }
+  apply(saved);
+  if(window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){ if(!root.getAttribute('data-theme')) apply(''); }); }
+  // Interest form: composes an email to the Young Owners team (static site; no data is stored).
+  var f=document.getElementById('interest'), out=document.getElementById('sent');
+  f.addEventListener('submit',function(e){e.preventDefault();var g=function(id){return document.getElementById(id).value.trim();};var nm=g('f-name'),em=g('f-email');if(!nm||!em||em.indexOf('@')<0){out.textContent='Add your name and a working email address, then send again.';out.classList.add('show');return;}
+    var subj='Young Owners: '+g('f-ask')+' ('+g('f-role')+')';var body='Name: '+nm+'\nEmail: '+em+'\nOrganization: '+g('f-org')+'\nI am a: '+g('f-role')+'\nLooking for: '+g('f-ask')+'\n\n'+g('f-msg');
+    window.location.href='mailto:eatmediatv@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    out.textContent='Thank you, '+nm+'. Your email app should open with the message ready to send. If it does not, write to eatmediatv@gmail.com.';out.classList.add('show');});
+  var cb=document.getElementById('copy');cb.addEventListener('click',function(){var txt=document.getElementById('mail').textContent;function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);cb.textContent='Selected';}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){cb.textContent='Copied';},fallback);}else{fallback();}});
+})();
+</script>
+</body>
+</html>
