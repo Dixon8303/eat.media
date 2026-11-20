@@ -63,6 +63,30 @@ ImaginariumOzone's `eatmedia/` in step. If the book site moves, or
 `erasure.html` or `unlearn.html` is renamed, update these targets the same day:
 the URLs are already spoken in Shorts and on the podcast.
 
+## The Path to Greatness book site (`pathtogreatness/`)
+
+The official site for D. Antione Dixon's book *The Path to Greatness*
+(The Elevated Edition), live at **https://eatmediatv.com/pathtogreatness/**.
+One page plus its assets, no build step. The folder is identical to
+`eatmedia/pathtogreatness/` in ImaginariumOzone, so syncing is a plain folder
+copy: the canonical link, share tags and structured data already name this
+production URL.
+
+Day-to-day changes go in the config block at the top of
+`pathtogreatness/assets/ptg.js`:
+
+| Setting | What it does |
+|---|---|
+| `STATUS` | `"prelaunch"` shows the release-notice form. `"available"` swaps it for buy buttons. |
+| `BUY_LINKS` | One full `https://` product URL per format. Empty formats get no button. |
+| `FORM_ACTION` | The Kit form endpoint for this book's list. **Set this before promoting the page**: while it is empty the form collects nothing and only opens the visitor's own mail app (the page says so). |
+| `GA4_MEASUREMENT_ID` | Paste a `G-…` ID to turn analytics on. Empty loads no tracking script. |
+
+The page is listed in `sitemap.xml`, linked from the home page's "Beyond
+Production" cards and from the footer of all three company pages. The full
+notes (fidelity rule for quoted lines, what the page leaves out on purpose,
+the on-sale checklist) are in ImaginariumOzone's `eatmedia/README.md`.
+
 ## Origin
 
 This content is developed and kept in sync from
